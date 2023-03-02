@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Server | LINKS</title>
+    <link rel="stylesheet" href="styles">
+    <script src="script"></script>
+</head>
+<body>
+    <h1>
+        Aggiunta immagini, css e javascript
+    </h1>
+    <input type="checkbox" name="dark-mode" id="dark-mode"/>
+    <label for="dark-mode">
+        Toggle dark mode
+    </label>
+    <p>
+        Per aggiungere immagini, è stato sufficiente supportare il Content-Type "image/*" e fare in modo
+        di spedire il contenuto come uno stream di byte (il funzionamento è già dimostrato nella home page).
+    </p>
+    <p>
+        Il risultato è che se un'immagine viene inserita nella cartella docmuentRoot (come spiegato nel README.md)
+        è possibile caricarla sulla pagina utilizzando il tag &lt;img&gt;. Per esempio, indicando nell'attributo
+        src il valore "arena.jpg", sarà visualizzata la seguente immagine (si può anche cliccare per vederla singolarmente):
+    </p>
+    <a href="arena" target="_blank">
+        <img src="arena" alt="arena di verona"/>
+    </a>
+    <p>
+        Con lo stesso metodo è stato possibile implementare il foglio di stile css che, come si vede in tutte le pagine,
+        permette di apporre uno stile al contenuto HTML.
+    </p>
+    <p>
+        Infine è possibile collegare uno script utilizzando il metodo già descritto. Così facendo si può dichiarare
+        un codice in un file a parte che può essere utilizzato su più pagine con semplicità. Segue un esempio che
+        crea un pulsante arcobaleno.
+    </p>
+    <button id="rainbow" onclick="rainbow();">Clicca per la magia</button>
+    <p>
+        Cliccare il seguente tasto per tornare alla home page
+    </p>
+    <ul class="menu">
+        <li>
+            <a href="/">HOME PAGE</a>
+        </li>
+    </ul>
+</body>
+</html>
