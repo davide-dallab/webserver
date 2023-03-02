@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Server | HOME PAGE</title>
+    <link rel="stylesheet" href="styles">
+</head>
+<body>
+    <h1>Il Modello Client-Server</h1>
+    <input type="checkbox" name="dark-mode" id="dark-mode"/>
+    <label for="dark-mode">
+        Toggle dark mode
+    </label>
+    <br/>
+    <img src="client-server" alt="Modello Client-Server"/>
+    <p>
+        Il modello Client-Server è un modello che permette la realizzazione di applicazioni
+        di rete in cui esiste un'entità che invia delle richieste, <b>il Client</b>, e mostra le
+        le risposte che vengono inviate dall'altra entità, <b>il Server</b>, che interpreta le richieste
+        del client e invia delle risposte di conseguenza.
+    </p>
+    <img src="http-logo" alt="Logo HTTP"/>
+    <p>
+        Il protocollo fondamentale per le applicazioni di questo tipo è il protocollo <b>HTTP</b> (o la controparte
+        sicura <b>HTTPS</b>). Questo protocollo di livello applicazione si basa sul protocollo TCP (che garantisce una connessione
+        affidabile tra client e server) e dichiara come spedire le suddette richieste e risposte. Esse sono entrambe in formato testuale
+        e sono descritte nel seguente modo:<br/>
+        Richiesta:
+<pre>GET /miapagina HTTP/1.1
+Host: localhost
+Accept-Type: text/html
+
+<span style="color: #fff8;">// body assente</span></pre>
+        Risposta:
+<pre>HTTP/1.1 200 OK
+Content-Type: text/html
+
+<span style="color: #fff8;">// HTML</span></pre>
+    </p>
+    <p>
+        Queste applicazioni sono ampiamente utilizzate nel mondo e il loro utilizzo principale è probabilmente il mondo del Web,
+        in cui tramite l'utilizzo di applicazioni Client estremamente diffuse, <b>i Browser</b>, gli utenti
+        possono navigare in rete con l'utilizzo di un'interfaccia intuitiva e senza conoscere il funzionamento di essi.
+    </p>
+    <h3>
+        Le altre pagine di questo sito
+    </h3>
+    <ul class="menu">
+        <li>
+            <a href="links">
+                Aggiunta di immagini, css e javascript
+            </a>
+        </li>
+        <li>
+            <a href="constructor">
+                Classe HTMLElement
+            </a>
+        </li>
+        <li>
+            <a href="readme">
+                Leggi file README.md
+            </a>
+        </li>
+        <li>
+            <a href="notexisting">
+                Pagina che non esiste (darà errore 404)
+            </a>
+        </li>
+    </ul>
+</body>
+</html>
